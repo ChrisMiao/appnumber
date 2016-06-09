@@ -60,7 +60,7 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 						<manifestEntries>
-							<git-SHA-1>${buildNumber}</git-SHA-1>
+							<git-version>${buildNumber}</git-version>
 						</manifestEntries>
 					</archive>
 				</configuration>
