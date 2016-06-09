@@ -44,6 +44,10 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<doCheck>true</doCheck>
+					<doUpdate>true</doUpdate>
+				</configuration>
 			</plugin>
 
 			<plugin>
@@ -56,7 +60,8 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 						<manifestEntries>
-							<git-SHA-1>${buildNumber}</git-SHA-1>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+							>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -66,7 +71,7 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:https://github.com/ChrisMiao/versionnumber.git</connection>
+		<connection>scm:git:https://github.com/ChrisMiao/appnumber.git</connection>
 	</scm>
 
 
