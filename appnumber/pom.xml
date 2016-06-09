@@ -53,15 +53,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.1.1</version>
+				<version>2.6</version>
 				<configuration>
 					<archive>
 						<manifest>
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 						<manifestEntries>
-							<Implementation-Build>${buildNumber}</Implementation-Build>
-							>
+							<git-SHA-1>${buildNumber}</git-SHA-1>
 						</manifestEntries>
 					</archive>
 				</configuration>
